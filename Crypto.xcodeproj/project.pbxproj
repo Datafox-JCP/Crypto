@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		C6D5A43C2A3B9B7400318090 /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5A43B2A3B9B7400318090 /* CryptoApp.swift */; };
 		C6D5A43E2A3B9B7400318090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5A43D2A3B9B7400318090 /* ContentView.swift */; };
-		C6D5A4402A3B9B7900318090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D5A43F2A3B9B7900318090 /* Assets.xcassets */; };
 		C6D5A4432A3B9B7900318090 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D5A4422A3B9B7900318090 /* Preview Assets.xcassets */; };
+		C6D5A44A2A3BA11C00318090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D5A4492A3BA11B00318090 /* Assets.xcassets */; };
+		C6D5A44D2A3BA3FC00318090 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D5A44C2A3BA3FC00318090 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6D5A4382A3B9B7400318090 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D5A43B2A3B9B7400318090 /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
 		C6D5A43D2A3B9B7400318090 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C6D5A43F2A3B9B7900318090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6D5A4422A3B9B7900318090 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6D5A4492A3BA11B00318090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		C6D5A44C2A3BA3FC00318090 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		C6D5A43A2A3B9B7400318090 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				C6D5A44B2A3BA3DC00318090 /* Extensions */,
 				C6D5A43B2A3B9B7400318090 /* CryptoApp.swift */,
 				C6D5A43D2A3B9B7400318090 /* ContentView.swift */,
-				C6D5A43F2A3B9B7900318090 /* Assets.xcassets */,
+				C6D5A4492A3BA11B00318090 /* Assets.xcassets */,
 				C6D5A4412A3B9B7900318090 /* Preview Content */,
 			);
 			path = Crypto;
@@ -65,6 +68,14 @@
 				C6D5A4422A3B9B7900318090 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6D5A44B2A3BA3DC00318090 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C6D5A44C2A3BA3FC00318090 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D5A4432A3B9B7900318090 /* Preview Assets.xcassets in Resources */,
-				C6D5A4402A3B9B7900318090 /* Assets.xcassets in Resources */,
+				C6D5A44A2A3BA11C00318090 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D5A43E2A3B9B7400318090 /* ContentView.swift in Sources */,
+				C6D5A44D2A3BA3FC00318090 /* Color+Extension.swift in Sources */,
 				C6D5A43C2A3B9B7400318090 /* CryptoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +282,12 @@
 				DEVELOPMENT_TEAM = T2Q4YR3P44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cripto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +312,12 @@
 				DEVELOPMENT_TEAM = T2Q4YR3P44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cripto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
