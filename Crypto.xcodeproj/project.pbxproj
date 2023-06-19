@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C636930A2A4097AF00729EFF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63693092A4097AF00729EFF /* NetworkingManager.swift */; };
 		C6988B672A3F49CD0083C452 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6988B662A3F49CD0083C452 /* CircleButtonAnimationView.swift */; };
 		C6988B6A2A3F855F0083C452 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6988B692A3F855F0083C452 /* CoinModel.swift */; };
 		C6988B6C2A3F8B9F0083C452 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6988B6B2A3F8B9F0083C452 /* CoinRowView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C63693092A4097AF00729EFF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		C6988B662A3F49CD0083C452 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		C6988B692A3F855F0083C452 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		C6988B6B2A3F8B9F0083C452 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63693082A40977700729EFF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C63693092A4097AF00729EFF /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C6988B682A3F853F0083C452 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		C6D5A43A2A3B9B7400318090 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				C63693082A40977700729EFF /* Utilities */,
 				C6988B732A3FA5770083C452 /* Services */,
 				C6D5A44B2A3BA3DC00318090 /* Extensions */,
 				C6988B682A3F853F0083C452 /* Models */,
@@ -239,6 +250,7 @@
 				C6D5A44D2A3BA3FC00318090 /* Color+Extension.swift in Sources */,
 				C6D5A4562A3BAEAB00318090 /* CircleButtonView.swift in Sources */,
 				C6D5A43C2A3B9B7400318090 /* CryptoApp.swift in Sources */,
+				C636930A2A4097AF00729EFF /* NetworkingManager.swift in Sources */,
 				C6988B672A3F49CD0083C452 /* CircleButtonAnimationView.swift in Sources */,
 				C6988B6E2A3F8C130083C452 /* PreviewProvider.swift in Sources */,
 				C6988B702A3F90620083C452 /* Double+Extension.swift in Sources */,

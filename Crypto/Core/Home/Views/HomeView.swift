@@ -47,6 +47,7 @@ struct HomeView_Previews: PreviewProvider {
         NavigationView {
             HomeView()
                 .navigationBarHidden(true)
+                .preferredColorScheme(.dark)
         }
         .environmentObject(dev.homeVM)
     }
@@ -74,7 +75,6 @@ extension HomeView {
             CircleButtonView(iconName: "chevron.right")
                 .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                 .onTapGesture {
-                    
                     withAnimation(.spring()) {
                         showPortfolio.toggle()
                     }
